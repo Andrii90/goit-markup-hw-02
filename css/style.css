@@ -1,0 +1,60 @@
+/* Фон сайта #FFFFFF */
+/* Цвет основного текста #757575 */
+/* Вторичный цвет #212121 */
+/* Акцент #2196F3 */
+/* Цвет заголовков #FFFFFF */
+/* Цвет подвала #2F303A */
+/* Цвет белой кнопки #f5f4fa */
+:root {
+  --background-fone: #ffffff;
+  --text-color: #757575;
+  --secondary-color: #212121;
+  --button-color: #2196f3;
+  --heading-color: #ffffff;
+  --footer-color: #2f303a;
+  --button-white: #f5f4fa;
+}
+body {
+  background-color: var(--background-fone);
+  color: var(--secondary-color);
+}
+.link {
+  color: var(--secondary-color);
+}
+.link-color {
+  color: var(--button-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--button-color);
+}
+.link-address {
+  color: var(--text-color);
+}
+.link-address:hover,
+.link-address:focus {
+  color: var(--button-color);
+}
+.link-heading {
+  color: var(--heading-color);
+}
+.text {
+  color: var(--text-color);
+}
+.black {
+  color: var(--secondary-color);
+}
+.text-footer {
+  color: var(--text-color);
+}
+.text-footer:hover,
+.text-footer:focus {
+  color: var(--button-color);
+}
+.box {
+  color: var(--heading-color);
+  background: var(--button-color);
+  display: inline-block;
+  border: 1px solid var(--button-color);
+  padding: 10px 32px 10px 32px;
+}
