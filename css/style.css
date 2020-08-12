@@ -18,6 +18,14 @@ body {
   background-color: var(--background-fone);
   color: var(--secondary-color);
 }
+/* Скидываем стили списка */
+.reset-ul {
+  list-style-type: none;
+}
+
+.reset-link {
+  text-decoration: none;
+}
 .link {
   color: var(--secondary-color);
 }
@@ -41,8 +49,13 @@ body {
 .text {
   color: var(--text-color);
 }
+
 .black {
   color: var(--secondary-color);
+}
+.footer-b {
+  color: #ffffff;
+  text-transform: uppercase;
 }
 .text-footer {
   color: var(--text-color);
@@ -57,4 +70,8 @@ body {
   display: inline-block;
   border: 1px solid var(--button-color);
   padding: 10px 32px 10px 32px;
+}
+.button-filter:hover,
+.button-filter:focus {
+  cursor: pointer;
 }
