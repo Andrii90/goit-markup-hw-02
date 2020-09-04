@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
@@ -12,44 +20,47 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html" class="link reset-link"
-          ><span class="link-color">Web</span> studio</a
-        >
-        <ul class="reset-ul">
-          <li>
-            <a href="" class="link reset-link">Студия</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="link reset-link">Портфолио</a>
-          </li>
-          <li>
-            <a href="" class="link reset-link">Контакты</a>
-          </li>
-        </ul>
+      <nav class="container">
+        <div class="nav-main">
+          <a href="./index.html" class="logo reset-link"
+            ><span class="logo-color">Web</span> studio</a
+          >
+          <ul class="ul reset-ul">
+            <li class="nav-items">
+              <a href="" class="link reset-link">Студия</a>
+            </li>
+            <li class="nav-items">
+              <a href="./portfolio.html" class="link reset-link">Портфолио</a>
+            </li>
+            <li class="nav-items">
+              <a href="" class="link reset-link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="ul-contact reset-ul">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contacts reset-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-li">
+              <a href="tel:+380961111111" class="contacts reset-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-      <ul class="reset-ul">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link-address reset-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link-address reset-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
     </header>
     <main>
-      <section>
-        <h1 class="link-heading">Эффективные решения для вашего бизнеса</h1>
-        <a href="" class="box reset-link">Заказать услугу</a>
+      <section class="hero.container">
+        <div class="hero">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="box"></button>
+        </div>
       </section>
       <section>
         <ul class="reset-ul">
           <li>
-            <img src="./images/antenna.svg" alt="Антенна" width="70" />
             <h3 class="black">Внимание к деталям</h3>
             <p class="text">
               Идейные соображения, а также начало повседневной работы по
@@ -57,7 +68,6 @@
             </p>
           </li>
           <li>
-            <img src="./images/clock.svg" alt="Часы" width="70" />
             <h3 class="black">Пунктуальность</h3>
             <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -65,7 +75,6 @@
             </p>
           </li>
           <li>
-            <img src="./images/diagram.svg" alt="Диаграмма" width="70" />
             <h3 class="black">Планирование</h3>
             <p class="text">
               Равным образом консультация с широким активом в значительной
@@ -73,7 +82,6 @@
             </p>
           </li>
           <li>
-            <img src="./images/astronaut.svg" alt="Астронавт" width="70" />
             <h3 class="black">Современные технологии</h3>
             <p class="text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -83,108 +91,34 @@
         </ul>
       </section>
       <section>
+        <h2>Чем мы занимаемся</h2>
+        <img src="./images/work.jpg" alt="Проектирование" />
+        <img src="./images/work2.jpg" alt="Приложения" />
+        <img src="./images/work3.jpg" alt="Дизайн" />
+      </section>
+      <section>
         <h2 class="black">Наша команда</h2>
         <ul class="reset-ul">
           <li>
-            <img
-              src="./images/Nickolay.jpg"
-              alt="Николай Кучеренко"
-              width="354"
-            />
-            <h3 class="black">Николай Кучеренко</h3>
-            <p class="text">Product Designer</p>
-            <ul class="reset-ul">
-              <li>
-                <img src="./images/instagram.svg" alt="Инстаграм" width="20" />
-              </li>
-              <li>
-                <img src="./images/twitter.svg" alt="Твиттер" width="20" />
-              </li>
-              <li>
-                <img src="./images/facebook.svg" alt="Фейсбук" width="20" />
-              </li>
-              <li>
-                <img src="./images/linkedin.svg" alt="Линкедин" width="20" />
-              </li>
-            </ul>
+            <img src="./images/it1.jpg" alt="Игорь Демьяненко" width="354" />
+            <h3 class="black">Игорь Демьяненко</h3>
+            <p class="text" lang="en">Product Designer</p>
           </li>
           <li>
-            <img src="./images/Olga.jpg" alt="Ольга Иванова" width="354" />
-            <h3 class="black">Ольга Иванова</h3>
-            <p class="text">Frontend Developer</p>
-            <ul class="reset-ul">
-              <li>
-                <img src="./images/instagram.svg" alt="Инстаграм" width="20" />
-              </li>
-              <li>
-                <img src="./images/twitter.svg" alt="Твиттер" width="20" />
-              </li>
-              <li>
-                <img src="./images/facebook.svg" alt="Фейсбук" width="20" />
-              </li>
-              <li>
-                <img src="./images/linkedin.svg" alt="Линкедин" width="20" />
-              </li>
-            </ul>
+            <img src="./images/it2.jpg" alt="Ольга Репина" width="354" />
+            <h3 class="black">Ольга Репина</h3>
+            <p class="text" lang="en">Frontend Developer</p>
           </li>
           <li>
-            <img src="./images/Andrey.jpg" alt="Андрей Шевченко" width="354" />
-            <h3 class="black">Андрей Шевченко</h3>
-            <p class="text">Marketing</p>
-            <ul class="reset-ul">
-              <li>
-                <img src="./images/instagram.svg" alt="Инстаграм" width="20" />
-              </li>
-              <li>
-                <img src="./images/twitter.svg" alt="Твиттер" width="20" />
-              </li>
-              <li>
-                <img src="./images/facebook.svg" alt="Фейсбук" width="20" />
-              </li>
-              <li>
-                <img src="./images/linkedin.svg" alt="Линкедин" width="20" />
-              </li>
-            </ul>
+            <img src="./images/it3.jpg" alt="Николай Тарасов" width="354" />
+            <h3 class="black">Николай Тарасов</h3>
+            <p class="text" lang="en">Marketing</p>
           </li>
+
           <li>
-            <img src="./images/Ivan.jpg" alt="Иван Николаев" width="354" />
-            <h3 class="black">Иван Николаев</h3>
-            <p class="text">UI Designer</p>
-            <ul class="reset-ul">
-              <li>
-                <img src="./images/instagram.svg" alt="Инстаграм" width="20" />
-              </li>
-              <li>
-                <img src="./images/twitter.svg" alt="Твиттер" width="20" />
-              </li>
-              <li>
-                <img src="./images/facebook.svg" alt="Фейсбук" width="20" />
-              </li>
-              <li>
-                <img src="./images/linkedin.svg" alt="Линкедин" width="20" />
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <h2 class="black">Постоянные клиенты</h2>
-        <ul class="reset-ul">
-          <li>
-            <img src="./images/logo1.svg" alt="Логотип" width="44" />
-          </li>
-          <li>
-            <img src="./images/logo2.svg" alt="Логотип" width="40" />
-          </li>
-          <li>
-            <img src="./images/logo3.svg" alt="Логотип" width="41" />
-          </li>
-          <li>
-            <img src="./images/logo4.svg" alt="Логотип" width="79" />
-          </li>
-          <li>
-            <img src="./images/logo5.svg" alt="Логотип" width="59" />
-          </li>
-          <li>
-            <img src="./images/logo6.svg" alt="Логотип" width="88" />
+            <img src="./images/Ivan.jpg" alt="Михаил Ермаков" width="354" />
+            <h3 class="black">Михаил Ермаков</h3>
+            <p class="text" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -209,23 +143,6 @@
             <a href="tel:+380991111111" class="text-footer reset-link"
               >+38 099 111 11 11</a
             >
-          </li>
-        </ul>
-      </div>
-      <div>
-        <b class="footer-b">Присоединяйтесь</b>
-        <ul class="reset-ul">
-          <li>
-            <img src="./images/instagram.svg" alt="Инстаграм" width="20" />
-          </li>
-          <li>
-            <img src="./images/twitter.svg" alt="Твиттер" width="20" />
-          </li>
-          <li>
-            <img src="./images/facebook.svg" alt="Фейсбук" width="20" />
-          </li>
-          <li>
-            <img src="./images/linkedin.svg" alt="Линкедин" width="20" />
           </li>
         </ul>
       </div>
