@@ -81,33 +81,27 @@ body {
   margin-left: 50px;
 }
 /* Hero */
-.hero .container {
+.hero-container {
+  max-width: 1600px;
+  min-height: 600px;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--footer-color);
 }
 .hero {
-  width: max;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-  background: #2f303a;
-  border: 1px solid #000000;
-  box-sizing: border-box;
+  max-width: 696px;
+  margin: auto;
+  text-align: center;
 }
 .hero-title {
-  width: 696px;
-  height: 120px;
   font-family: Roboto;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  color: var(--heading-color);
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  margin: auto;
 }
 
 .ul {
@@ -187,15 +181,17 @@ button {
   color: var(--accent-color);
 }
 .box {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  min-width: 200px;
   color: var(--heading-color);
   background: var(--accent-color);
   display: inline-block;
   border: 1px solid var(--accent-color);
   padding: 10px 32px 10px 32px;
+  margin-top: 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 30px;
 }
 .box.container {
   width: 200px;
@@ -210,4 +206,157 @@ button {
 .button-filter:hover,
 .button-filter:focus {
   cursor: pointer;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.feautures {
+  display: flex;
+  margin-top: 94px;
+}
+.list {
+  width: calc((100%-3 * 30px) / 4);
+}
+.list:not(:first-child) {
+  padding-left: 30px;
+}
+/* .list .black .top {
+  margin-top: 10px;
+} */
+.feautures .black {
+  margin-bottom: 10px;
+}
+/* Наши возможности */
+.possibles {
+  display: flex;
+  padding-top: 50px;
+}
+.possibles-li:not(:first-child) {
+  padding-left: 30px;
+}
+.possibles-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.possibles-text {
+  text-align: center;
+  font-weight: 700;
+  color: #212121;
+}
+/* Наша команда */
+.command {
+  display: flex;
+}
+.command-top {
+  display: flex;
+}
+.command-text {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+/* Подвал */
+.podval {
+  background-color: var(--footer-color);
+  max-width: 1600px;
+  min-height: 252px;
+  margin-top: 94px;
+}
+.podval-logo {
+  color: var(--background-fone);
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+.podval-logo {
+  padding-top: 60px;
+}
+.podval-logo:hover,
+.podval-logo:focus {
+  color: var(--accent-color);
+}
+.podval-contacts {
+  padding-top: 20px;
+}
+.podval-container {
+  width: 231px;
+}
+.podval-list {
+  color: var(--text-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.podval-addres {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.container-portfolio {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ul-portfolio {
+  display: flex;
+  justify-content: center;
+}
+.list-portfolio {
+  padding: 6px 22px 6px 22px;
+}
+.list-portfolio:not(:first-child) {
+  margin-left: 8px;
+}
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.work-item {
+  margin-right: 30px;
+}
+.work-item {
+  margin-bottom: 30px;
+}
+.work-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.text-portfolio {
+  font-weight: bold;
+}
+.marg {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+}
+.marg .black {
+  margin-bottom: 4px;
+}
+.marg .black {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.marg .black .text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
